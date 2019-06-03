@@ -79,8 +79,7 @@ function filterTasks(e){    // Param here is the 'event parameter'
     const text = e.target.value;
     document.querySelectorAll('.collection-item').forEach(
         function(task){     // iterating over each node element as "task"
-            const item = task.firstChild.textContent;   // getting text content 
-            console.log(item)
+            const item = task.firstChild.textContent;   // returns all tasks as text (for each loops through and catches each first child / elemnt) 
             if(item.toLowerCase().indexOf(text) != -1){
                 task.style.display = 'block';
             }else{
